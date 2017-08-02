@@ -1,0 +1,291 @@
+body, html {
+    height: 100%;
+}
+
+/* Navbar */
+header {
+    width: 100% !important;
+    border-radius: 0 !important;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+header p, header a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+header a:hover {
+    opacity: 1;
+    color: #2da !important;
+}
+
+/* Intro */
+.intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/background_intro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.introduce {
+    font-family: 'Lato', sans-serif;
+    font-size: 5em;
+    color: #fff;
+}
+
+.introduce h1, .about, .projects {
+    font-family: 'Open Sans', sans-serif;
+}
+
+span.first-name-prefix {
+    color: #2da;
+}
+
+.intro button {
+    border-radius: 12em !important;
+    cursor: pointer;
+}
+
+/* About */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 1.2em;
+    background-color: #eee;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #fff;
+}
+
+.skills img {
+    width: 70%;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 1.2em;
+    background-color: #eee;
+}
+
+/* Footer */
+.arrow {
+    background-color: transparent;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding-bottom: 2em;
+    font-size: 2em;
+    color: #2da;
+}
+
+footer h1, footer p {
+    color: #eee !important;
+}
+
+.about h1, .projects h1, footer h1 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 50px !important;
+}
+
+.skills h1 {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 50px !important;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    [class*="mobile hidden"],
+    [class*="tablet only"]:not(.mobile),
+    [class*="computer only"]:not(.mobile),
+    [class*="large monitor only"]:not(.mobile),
+    [class*="widescreen monitor only"]:not(.mobile),
+    [class*="or lower hidden"] {
+        display: none !important;
+    }
+
+    .introduce {
+        font-size: 3em;
+    }
+
+    .introduce h1 {
+        font-size: 22px !important;
+    }
+
+    .about h1, .skills h1, .projects h1, .contact h1 {
+        font-size: 36px !important;
+    }
+
+    .about, .projects {
+        font-size: 1em;
+    }
+
+    .skills img {
+        width: 34%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    footer {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/background_contact.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    [class*="mobile only"]:not(.tablet),
+    [class*="tablet hidden"],
+    [class*="computer only"]:not(.tablet),
+    [class*="large monitor only"]:not(.tablet),
+    [class*="widescreen monitor only"]:not(.tablet),
+    [class*="or lower hidden"]:not(.mobile) {
+        display: none !important;
+    }
+
+    .about h1, .skills h1, .projects h1 {
+        font-size: 45px !important;
+    }
+
+    .about, .projects {
+        font-size: 1.1em;
+    }
+
+    .about img, .skills img, .projects img {
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .about, .skills, .projects {
+        height: 100%;
+    }
+
+    footer {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/background_contact.jpg");
+        background-size: calc(100% + 50px);
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        padding-top: 3em;
+    }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    [class*="mobile only"]:not(.computer),
+    [class*="tablet only"]:not(.computer),
+    [class*="computer hidden"],
+    [class*="large monitor only"]:not(.computer),
+    [class*="widescreen monitor only"]:not(.computer),
+    [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+
+    .about, .skills, .projects {
+        height: 100%;
+    }
+
+    .projects {
+        font-size: 1.1em;
+    }
+
+    footer {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/background_contact.jpg");
+        background-size: calc(100% + 50px);
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        padding-top: 3em;
+    }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    [class*="mobile only"]:not([class*="large monitor"]),
+    [class*="tablet only"]:not([class*="large monitor"]),
+    [class*="computer only"]:not([class*="large monitor"]),
+    [class*="large monitor hidden"],
+    [class*="widescreen monitor only"]:not([class*="large monitor"]),
+    [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+
+    .about, .skills, .projects {
+        height: 100%;
+    }
+
+    .projects {
+        font-size: 1.15em;
+    }
+
+    footer {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/background_contact.jpg");
+        background-size: calc(100% + 50px);
+        bottom: 0;
+        height: 55%;
+        width: 100%;
+        padding-top: 0.5em;
+    }
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: 1920px) {
+    [class*="mobile only"]:not([class*="widescreen monitor"]),
+    [class*="tablet only"]:not([class*="widescreen monitor"]),
+    [class*="computer only"]:not([class*="widescreen monitor"]),
+    [class*="large monitor only"]:not([class*="widescreen monitor"]),
+    [class*="widescreen monitor hidden"],
+    [class*="widescreen monitor or lower hidden"] {
+        display: none !important;
+    }
+
+    .about, .skills, .projects {
+        height: 100%;
+    }
+
+    footer {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/background_contact.jpg");
+        background-size: calc(100% + 50px);
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        padding-top: 0.5em;
+    }
+}
