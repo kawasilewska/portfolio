@@ -17,6 +17,6 @@
 - [Animate.css](https://daneden.github.io/animate.css/) for animations
 
 [license-url]: https://img.shields.io/badge/license-Apache%202-blue.svg?style=flat "License"
-[version-url]: https://img.shields.io/badge/version-1.0.0-brightgreen.svg?style=flat "Version"
+[version-url]: https://img.shields.io/badge/version-1.0.0-orange.svg?style=flat "Version"
 [done-url]: https://img.shields.io/badge/done-07.2017-yellow.svg?style=flat "Done"
-[maintenance-url]: https://img.shields.io/maintenance/no/2017.svg?style=flat "Maintenance"
+[maintenance-url]: https://img.shields.io/maintenance/yes/2017.svg?style=flat "Maintenance"
